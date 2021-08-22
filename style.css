@@ -1,0 +1,209 @@
+@import url('"https://fonts.google.com/specimen/Josefin+Sans');
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1;
+  /* grid-template-rows: repeat(1, 1fr); */
+  background-color: hsl(235, 21%, 11%);
+  height: 100vh;
+}
+
+.first {
+  background-image: url(bg-desktop-dark.jpg);
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 20rem;
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  /* align-items: center; */
+  justify-content: space-around;
+  font-size: 2rem;
+  font-family: Josefin Sans;
+  text-align: center;
+}
+.todo {
+  display: flex;
+  align-items: space-between;
+  justify-content: space-evenly;
+  /* align-self: center; */
+}
+.first h3 {
+  letter-spacing: 12px;
+}
+.second {
+  background-color: hsl(235, 21%, 11%);
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.btn {
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.btn:hover {
+  transform: rotate(90deg);
+}
+
+#ipt {
+  width: 50vh;
+  height: 6vh;
+  align-self: center;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: none;
+  margin: 0.5rem auto 3rem auto;
+  background-color: hsl(235, 24%, 19%);
+  color: white;
+}
+
+.the-one {
+  background-color: hsl(235, 24%, 19%);
+  width: 50vh;
+  min-height: 50vh;
+  z-index: 100;
+  position: relative;
+  bottom: 3rem;
+  margin: 1rem auto;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.contain {
+  border-radius: 3px;
+  grid-row: 1/7;
+  color: hsl(233, 14%, 35%);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+  grid-row: 7/8;
+  color: hsl(234, 39%, 85%);
+  padding: 0 1rem;
+  padding-top: 0;
+  border-top: 1px solid hsl(233, 14%, 35%);
+}
+
+.sele {
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  color: hsl(234, 39%, 85%);
+}
+
+.sele:hover {
+  color: hsl(236, 33%, 92%);
+}
+
+.item {
+  flex: 1;
+  padding: 0.5rem;
+  margin: 0;
+  flex-basis: 35px; /* Set a base width */
+  /* flex: 1; Allows it to stretch */
+  border-bottom: 1px solid hsl(233, 14%, 35%);
+  /* min-height: 1.5rem; */
+  /* text-decoration: line-through; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item span {
+  padding: 1rem auto;
+}
+
+.circle {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid hsl(233, 14%, 35%);
+  border-radius: 50%;
+  transition: all 0.3s linear;
+  margin: 0.5rem;
+  padding: 5px;
+}
+
+.circle:hover {
+  /* background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%)); */
+
+  border-color: hsl(236, 33%, 92%);
+}
+
+.check {
+  visibility: hidden;
+}
+.cross {
+  background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cross .check {
+  visibility: visible;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+.senco {
+  background-image: url(bg-desktop-light.jpg);
+}
+
+.secondo {
+  background-color: hsl(0, 0%, 98%) !important;
+}
+
+.conton {
+  background-color: hsl(233, 11%, 84%);
+}
+
+.senco #ipt {
+  background-color: hsl(236, 33%, 92%);
+}
+
+/* .contain
+.footer */
+
+.foto {
+  background-color: hsl(233, 11%, 84%);
+}
+
+.foto * {
+  color: black;
+}
